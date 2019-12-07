@@ -2,7 +2,7 @@ function door(client)
 
     local IO_PIN = 1
 
-    gpio.mode(IO_PIN, gpio.INPUT)
+    gpio.mode(IO_PIN, gpio.INPUT, gpio.PULLUP)
 
     last_state = gpio.read(IO_PIN)
 
